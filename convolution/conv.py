@@ -25,7 +25,6 @@ random_filter = [[-1, -2, 0],
                  [-1, 0, 1],
                  [0, 2, 1]]
 
-
 def rgb_convolution(im, filt):
     image_height = len(im)
     image_width = len(im[0])
@@ -96,4 +95,3 @@ convolute_image(train_data[id], horizontal_filter)
 im = Image.open('../data/images/ct.jpg')
 im = np.asarray(im)
 convolute_image(im, horizontal_filter)
-
